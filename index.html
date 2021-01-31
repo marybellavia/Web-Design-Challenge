@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Latitude</a>
+    <button type="button" class="btn btn-info text-center"><a class="navbar-brand text-light" href="index.html">Latitude</a></button>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,17 +20,17 @@
             Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Max Temperature</a>
-            <a class="dropdown-item" href="#">Humidity</a>
-            <a class="dropdown-item" href="#">Cloudiness</a>
-            <a class="dropdown-item" href="#">Wind Speed</a>
+            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
+          <a class="nav-link" href="comparison.html">Comparison</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Data</a>
+          <a class="nav-link" href="data.html">Data</a>
         </li>
       </ul>
     </div>
@@ -40,20 +39,28 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1>Summary: Latitude vs. X</h1>
+        <h1 class="text-info">Summary: Latitude vs. X</h1>
         <hr>
-        <figure class="figure image-wrapper float-left"><img src="output_data/LatitudeMaxTempScatter.PNG" class="img-fluid w-75" alt="Latitude vs Max Temperature Scatter Plot"></figure>  
+        <figure class="figure image-wrapper float-left"><img src="Resources/assets/images/Fig1.png" class="img-fluid w-75" alt="Latitude vs Max Temperature Scatter Plot"></figure>  
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum reiciendis officiis, quaerat veniam natus voluptatem quibusdam autem recusandae nobis adipisci rerum, atque explicabo, aliquid voluptas. Quos culpa saepe accusamus ipsa.
+          The purpose of this project was to analyze how weather changes as you get closer tothe equator. 
+          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
+          dataset on over 500 cities.
+        </p>
+        <p>
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. 
+          latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
+          This site provides the source data and visualizations created as part of the analysis, as well 
+          as explainations and descriptions of any trends and correloations witnessed.
         </p>
      </div>
      <div class="col-md-4">
-        <h1>Visualizations</h1>
+        <h1 class="text-info">Visualizations</h1>
         <hr>
-        <figure class="figure"><img src="output_data/LatitudeMaxTempScatter.PNG" class="img-fluid w-50 p-3" alt="Latitude vs Max Temperature Scatter Plot"></figure>
-        <figure class="figure"><img src="output_data/LatitudeHumidityScatter.PNG" class="img-fluid w-50 p-3" alt="Latitude vs Humidity Scatter Plot"></figure>
-        <figure class="figure"><img src="output_data/LatitudeCloudinessScatter.PNG" class="img-fluid w-50 p-3" alt="Latitude vs Cloudiness Scatter Plot"></figure>
-        <figure class="figure"><img src="output_data/LatitudeWindSpeedScatter.PNG" class="img-fluid w-50 p-3" alt="Latitude vs Wind Speed Scatter Plot"></figure>
+        <figure class="figure"><a href="maxtemp.html"><img src="Resources/assets/images/Fig1.png" class="img-fluid w-50 p-3" alt="Latitude vs Max Temperature Scatter Plot"></a></figure>
+        <figure class="figure"><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid w-50 p-3" alt="Latitude vs Humidity Scatter Plot"></a></figure>
+        <figure class="figure"><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid w-50 p-3" alt="Latitude vs Cloudiness Scatter Plot"></a></figure>
+        <figure class="figure"><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid w-50 p-3" alt="Latitude vs Wind Speed Scatter Plot"></a></figure>
      </div>
     </div>
   </div>
